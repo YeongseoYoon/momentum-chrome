@@ -87,9 +87,16 @@ h2{
 
 }
 
+
+/* Todo list */
 #todo-list li{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+#todo-list li span{
+    vertical-align: middle;
 }
 
 #todo-list li button{
@@ -123,6 +130,8 @@ h2{
     width: 100%;
     border: none;
 }
+
+/* Calendar*/
 .calendar {
     width: 100%;
 }
