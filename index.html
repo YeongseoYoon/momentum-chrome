@@ -20,24 +20,25 @@
         <div class="wrapper">
             <section class="calendar-clock-section">
                 <div class="calendar">
-                    <div class="month">
-                        <i class="fas fa-angle-left prev"></i>
-                        <div class="date">
-                            <p></p>
-                            <h1></h1>
+                    <div class="header">
+                        <div class="year-month"></div>
+                        <div class="nav">
+                            <button class="nav-btn go-prev" onclick="prevMonth()">&lt;</button>
+                            <button class="nav-btn go-today" onclick="goToday()">Today</button>
+                            <button class="nav-btn go-next" onclick="nextMonth()">&gt;</button>
                         </div>
-                        <i class="fas fa-angle-right next"></i>
                     </div>
-                    <div class="weekdays">
-                        <div>S</div>
-                        <div>M</div>
-                        <div>T</div>
-                        <div>W</div>
-                        <div>T</div>
-                        <div>F</div>
-                        <div>S</div>
-                    </div>
-                    <div class="days">
+                    <div class="main">
+                        <div class="days">
+                            <div class="day">일</div>
+                            <div class="day">월</div>
+                            <div class="day">화</div>
+                            <div class="day">수</div>
+                            <div class="day">목</div>
+                            <div class="day">금</div>
+                            <div class="day">토</div>
+                        </div>
+                        <div class="dates"></div>
                     </div>
                 </div>
                 <h2 id="clock">00:00:00</h2>
