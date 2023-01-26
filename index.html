@@ -19,6 +19,27 @@
 
         <div class="wrapper">
             <section class="calendar-clock-section">
+                <div class="calendar">
+                    <div class="month">
+                        <i class="fas fa-angle-left prev"></i>
+                        <div class="date">
+                            <p></p>
+                            <h1></h1>
+                        </div>
+                        <i class="fas fa-angle-right next"></i>
+                    </div>
+                    <div class="weekdays">
+                        <div>S</div>
+                        <div>M</div>
+                        <div>T</div>
+                        <div>W</div>
+                        <div>T</div>
+                        <div>F</div>
+                        <div>S</div>
+                    </div>
+                    <div class="days">
+                    </div>
+                </div>
                 <h2 id="clock">00:00:00</h2>
 
                 <div id="weather">
@@ -27,7 +48,7 @@
                 </div>
             </section>
             <section class="todo-list-section">
-                <h2 class="todo-title">Today's ToDo-List</h2>
+                <h2 class="todo-title">ToDo-List</h2>
                 <div class="todo-content">
                     <div class="todo-content-list">
                         <ul id="todo-list"></ul>
@@ -55,12 +76,19 @@
             <input type="submit" value="Log In"></input>
         </form>
     </div>
+
+    <div id="screen-sizer">
+        <span>화면 사이즈가 너무 작습니다.</span>
+        <span>큰 화면으로 보시길 권장합니다.</span>
+    </div>
+
     <script src="js/greetings.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/quotes.js"></script>
     <script src="js/background.js"></script>
     <script src="js/todo.js"></script>
     <script src="js/weather.js"></script>
+    <script src="js/calendar.js"></script>
 </body>
 
 </html>
