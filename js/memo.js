@@ -16,18 +16,15 @@ function onMemoUpdate(event){
   event.preventDefault();
   memoArea.readOnly=false; 
   localStorage.setItem(MEMO_STATE, memoArea.readOnly);
-  console.log(memoArea.readOnly);
 }
 
 
 function paintMemo(){
   const memoValue = localStorage.getItem(MEMO_KEY);
-  const memoState = localStorage.getItem(MEMO_STATE);
+  const memoState = Boolean(localStorage.getItem(MEMO_STATE)=="true" ? true:"" );
   memoArea.value = `${memoValue}`;
   memoArea.readOnly = memoState;
-  console.log(memoArea.readOnly);
 }
-
 
 paintMemo();
 
