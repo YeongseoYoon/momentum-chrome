@@ -347,6 +347,11 @@ border: 1px solid #d4aa70;
     height: 30px;
 }
 
+#weather div{
+    display: flex;
+    flex-direction: column;
+}
+
 
 /* hidden 적용위해 뒤에 배치함 옮기지 말것*/
 
