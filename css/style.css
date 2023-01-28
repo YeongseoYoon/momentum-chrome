@@ -352,6 +352,49 @@ border: 1px solid #d4aa70;
     flex-direction: column;
 }
 
+/* D-Day */
+.dday-section{
+    width: 100%;
+}
+
+.dday-title{
+    text-align: center;
+}
+
+.dday-form{
+    text-align: center;
+}
+
+.dday-title-div{
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.dday-inputs{
+    display: flex;
+    justify-content: center;
+}
+
+.dday-section input[type="text"]{
+    font-size: 18px;
+}
+
+.dday-section button,
+.dday-section input[type="text"]{
+    outline: none;
+    background: none;
+    border: none;
+}
+
+.dday-section button,
+.dday-section input[type="date"]{
+    font-size: 15px;
+    cursor: pointer;
+}
+
+label i {position:absolute; left:50%; right:50%; bottom:-1px; border-bottom:2px solid #000; transition:all .3s;}
+label input[type="text"]:focus + i {left:0; right:0; transition:all .3s;}
+
 
 /* hidden 적용위해 뒤에 배치함 옮기지 말것*/
 
