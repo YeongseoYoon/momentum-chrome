@@ -1,9 +1,7 @@
 const API_KEY = "fe1df1a05d62286e20412806dd38cb69";
 const weather = document.querySelector("#weather span:first-child");
 const city = document.querySelector("#weather span:last-child");
-// let locationIcon = document.querySelector('.weather-icon');
-// const {icon} = data.weather[0];
-// locationIcon.innerHTML = '<img src="icons/${icon}.png">';
+
 
 function onGeoOk(position){
     const lat = position.coords.latitude;
