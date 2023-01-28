@@ -5,6 +5,7 @@ const toDoList = document.getElementById("todo-list");
 const TODOS_KEY = "todos";
 
 let toDos = [];
+let checkList = [];
 
 function saveToDos() {
   localStorage.setItem(TODOS_KEY, JSON.stringify(toDos));
@@ -46,6 +47,7 @@ function handleToDoSubmit(event) {
   paintToDo(newTodoObj);
   saveToDos();
 }
+
 
 toDoForm.addEventListener("submit", handleToDoSubmit);
 

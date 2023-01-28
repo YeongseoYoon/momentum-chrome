@@ -22,7 +22,11 @@ function onMemoUpdate(event){
 function paintMemo(){
   const memoValue = localStorage.getItem(MEMO_KEY);
   const memoState = Boolean(localStorage.getItem(MEMO_STATE)=="true" ? true:"" );
-  memoArea.value = `${memoValue}`;
+  if(memoValue === null){
+    memoArea.value = "";
+  }else{
+    memoArea.value = `${memoValue}`;
+  }
   memoArea.readOnly = memoState;
 }
 
