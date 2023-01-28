@@ -335,6 +335,16 @@ box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
 border: 1px solid #d4aa70;
 }
 
+/* Weather*/
+#weather{
+    width: 100%;
+}
+
+#weather img{
+    width: 30px;
+    height: 30px;
+}
+
 
 /* hidden 적용위해 뒤에 배치함 옮기지 말것*/
 
