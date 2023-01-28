@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css" />
+    <script defer src="https://kit.fontawesome.com/ec08099fdd.js" crossorigin="anonymous"></script>
     <link href="img/title-logo.png" rel="shortcut icon" type="image/x-icon">
     <title>PokeMomentum</title>
 
@@ -101,6 +102,17 @@
         </div>
 
     </div>
+    <div id="bgm-section">
+        <h2>BGM</h2>
+        <audio id="audioContainer">
+            <source id="audioSource" src="" />
+            Your browser does not support the audio format.
+        </audio>
+        <div class="js-onOffWrap">
+            <button class="js-playBtn"><i class="fa-solid fa-play"></i></button>
+            <button class="js-stopBtn"><i class="fa-solid fa-stop"></i></button>
+        </div>
+    </div>
 
     <div class="welcome-page hidden">
         <img src="img/main.png" class="welcome-page-img" />
@@ -130,6 +142,7 @@
     <script src="js/checklist.js"></script>
     <script src="js/memo.js"></script>
     <script src="js/dday.js"></script>
+    <script src="js/music.js"></script>
 </body>
 
 </html>

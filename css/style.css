@@ -395,6 +395,25 @@ border: 1px solid #d4aa70;
 label i {position:absolute; left:50%; right:50%; bottom:-1px; border-bottom:2px solid #000; transition:all .3s;}
 label input[type="text"]:focus + i {left:0; right:0; transition:all .3s;}
 
+/* BGM */
+#bgm-section{
+    position: absolute;
+    display: flex;
+    top:0px;
+    right: 10px;
+    justify-content: center;
+    align-items: center;
+    color:aliceblue;
+}
+
+.js-onOffWrap button{
+    outline: none;
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-size: 20px;
+    color:aliceblue;
+}
 
 /* hidden 적용위해 뒤에 배치함 옮기지 말것*/
 
