@@ -1,7 +1,4 @@
 const API_KEY = "fe1df1a05d62286e20412806dd38cb69";
-const weather = document.querySelector("#weather span:first-child");
-const city = document.querySelector("#weather span:last-child");
-
 
 function onGeoOk(position){
     const lat = position.coords.latitude;
@@ -11,11 +8,15 @@ function onGeoOk(position){
     fetch(url)
         .then((response) => response.json())
         .then((data) => {
-            let locationIcon = document.querySelector('.weather-icon');
-            const {icon} = data.weather[0];
-            locationIcon.innerHTML = `<img src="icons/${icon}.png">;`;
+            const weatherDiv = document.querySelector("#weather");
+            const weather = weatherDiv.querySelector("span:first-of-type");
+            const city = weatherDiv.querySelector("span:last-child");
+            const weatherImg = weatherDiv.querySelector("img");
+            const icon = data.weather[0].icon;
+            const temp = Math.round(data.main.temp * 10) / 10;
+            weatherImg.src =  `img/icons/${icon}.png`;
+            weather.innerText = `${temp}˚C`;
             city.innerText = data.name;
-            weather.innerText = `${data.weather[0].main} / ${data.main.temp}`;
         }); 
 }
 
