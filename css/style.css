@@ -50,6 +50,10 @@ h1{
 h2{
     font-size: 2em;
 }
+
+h3{
+    font-size: 20px;
+}
 .title-header{
     padding: 10px 10px;
 }
@@ -395,6 +399,10 @@ border: 1px solid #d4aa70;
 label i {position:absolute; left:50%; right:50%; bottom:-1px; border-bottom:2px solid #000; transition:all .3s;}
 label input[type="text"]:focus + i {left:0; right:0; transition:all .3s;}
 
+.dday-subtitle{
+    margin: 3px 3px;
+}
+
 .edit-btn{
     position: absolute;
     top:0px;
@@ -419,6 +427,12 @@ label input[type="text"]:focus + i {left:0; right:0; transition:all .3s;}
     background: none;
     font-size: 20px;
     color:aliceblue;
+}
+
+/* quotes*/
+#quote{
+    height: 30px;
+    margin-bottom: 20px;
 }
 
 /* hidden 적용위해 뒤에 배치함 옮기지 말것*/
