@@ -4,7 +4,7 @@ const stopBtn = document.querySelector('.js-stopBtn')
 
 
 function playAudio() {
-  audioContainer.volume = 1;
+  audioContainer.volume = 0.3;
   audioContainer.loop = true;
   audioContainer.play();  
 }
